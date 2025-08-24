@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bertrand Bonnet : Mon Parcours, de la Musique au Digital</title>
+    <meta name="description" content="Découvrez le parcours de Bertrand Bonnet : une aventure de plus de 30 ans, de la composition musicale au développement web, en passant par le marketing digital.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Style pour la ligne de la timeline */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 1.4rem; /* Aligné avec le centre du point */
+            transform: translateX(-50%);
+            height: 100%;
+            width: 2px;
+            background-color: #FFD700;
+            z-index: 1;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 4rem; /* Espace pour le point et la ligne */
+        }
+        /* Style pour les points sur la timeline */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 1.4rem;
+            top: 0.25rem; /* Ajustement vertical du point */
+            transform: translateX(-50%);
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 50%;
+            background-color: #FFD700;
+            border: 3px solid #1a202c; /* Couleur du fond pour un effet de contour */
+            z-index: 2;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+<!-- Header -->
+<header class="py-20 px-4 text-center">
+    <div class="container mx-auto max-w-4xl">
+        <h1 class="text-3xl md:text-5xl font-extrabold mb-4 fade-in">Mon Parcours</h1>
+        <h2 class="text-xl md:text-2xl font-semibold text-yellow-400 mb-6 fade-in" style="animation-delay: 0.1s;">De la Musique au Marketing Digital</h2>
+        <p class="text-lg text-gray-300 max-w-3xl mx-auto fade-in" style="animation-delay: 0.2s;">
+            Plus qu'un simple CV, voici l'histoire d'une évolution constante, guidée par la curiosité et une soif insatiable d'apprendre et de construire.
+        </p>
+    </div>
+</header>
+
+<main class="container mx-auto max-w-4xl px-4">
+
+    <!-- Section Timeline -->
+    <section class="py-16">
+        <div class="relative timeline-line">
+
+            <!-- Années 80-90: Musique -->
+            <div class="timeline-item mb-12 fade-in">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-2">1987 - L'Étincelle Musicale</h3>
+                <p class="font-semibold text-white mb-2">Acquisition du premier synthétiseur et débuts en composition.</p>
+                <p class="text-gray-300 mb-4">À 15 ans, mon premier synthé, troqué contre des vacances, devient l'outil pour créer ma propre musique. Cette passion me mène à un poste de compositeur en studio où je produis sans relâche, puis à la création de mon propre groupe et même au succès commercial avec "La Danse d'Hélène".</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Composition</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Arrangement</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Production Musicale</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Création Graphique</span>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <a href="parcours-musical.html" class="text-yellow-400 font-semibold hover:underline">
+                        Découvrir mon parcours musical en détail &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Années 90-2000: Le Virage Digital -->
+            <div class="timeline-item mb-12 fade-in">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-2">1999 - Le Double Virage : Web et Régie</h3>
+                <p class="font-semibold text-white mb-2">Création de Tombola.fr et poste de Régisseur Technique.</p>
+                <p class="text-gray-300 mb-4">De retour des USA, je plonge dans le web et crée l'un des premiers sites de jeux en ligne pour le commerce local. En parallèle, en tant que régisseur, je gère la sonorisation d'événements majeurs et développe même un intranet pour optimiser les process internes.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Développement Web (ASP, HTML)</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Gestion de BDD</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Gestion Technique</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Sonorisation & Éclairage</span>
+                </div>
+            </div>
+
+            <!-- Années 2000: Entrepreneuriat -->
+            <div class="timeline-item mb-12 fade-in">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-2">2004 - L'Âme d'un Producteur Digital</h3>
+                <p class="font-semibold text-white mb-2">Production d'artistes et lancement de projets web innovants.</p>
+                <p class="text-gray-300 mb-4">Je reviens à la production musicale, mais avec une approche 360° : promotion, création de marque, boutique e-commerce... Une veille stratégique me permet ensuite de lancer le premier comparateur des numéros "118", m'offrant une visibilité médiatique inattendue et m'obligeant à apprendre le PHP en autodidacte.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">E-commerce (Prestashop)</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Développement PHP</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Veille Stratégique</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Relations Presse</span>
+                </div>
+            </div>
+
+            <!-- Années 2010: La Convergence Créative -->
+            <div class="timeline-item mb-12 fade-in">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-2">2013 - Du Virtuel au Matériel</h3>
+                <p class="font-semibold text-white mb-2">Fabrication de stabilisateurs caméra et expertise vidéo.</p>
+                <p class="text-gray-300 mb-4">La réalisation de clips vidéo m'amène à fabriquer mes propres outils, comme un stabilisateur "brushless". Pour cela, j'apprends la conception et l'impression 3D. Je développe en parallèle des compétences en post-production (fond vert) et en gestion de projet (cahier des charges, étude de marché).</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Conception 3D (CAO)</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Impression 3D</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Post-production Vidéo</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Méthodologie de Projet</span>
+                </div>
+            </div>
+
+            <!-- Années 2020: La Synthèse -->
+            <div class="timeline-item fade-in">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-2">2019 - La Corde Manquante à mon Arc</h3>
+                <p class="font-semibold text-white mb-2">Diplôme de Chef de Projet Marketing et Communication.</p>
+                <p class="text-gray-300 mb-4">Pour lier toutes mes expériences et donner un cadre stratégique à mes compétences techniques, j'obtiens une certification reconnue. C'est la synthèse parfaite qui me permet aujourd'hui d'offrir une vision globale et orientée résultats.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Marketing Stratégique</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Gestion de Projet Digital</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Communication 360°</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Portrait -->
+    <section class="py-20">
+        <div class="bg-gray-800 p-8 md:p-12 rounded-2xl text-center fade-in">
+            <h2 class="text-3xl font-bold text-white mb-8">Portrait d'un Créatif Polyvalent</h2>
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <span class="bg-gray-700 text-yellow-400 font-semibold px-4 py-2 rounded-full">Autodidacte</span>
+                <span class="bg-gray-700 text-yellow-400 font-semibold px-4 py-2 rounded-full">Créatif</span>
+                <span class="bg-gray-700 text-yellow-400 font-semibold px-4 py-2 rounded-full">Force de proposition</span>
+                <span class="bg-gray-700 text-yellow-400 font-semibold px-4 py-2 rounded-full">Polyvalent</span>
+                <span class="bg-gray-700 text-yellow-400 font-semibold px-4 py-2 rounded-full">Intuitif</span>
+                <span class="bg-gray-700 text-yellow-400 font-semibold px-4 py-2 rounded-full">Curieux</span>
+                <span class="bg-gray-700 text-yellow-400 font-semibold px-4 py-2 rounded-full">Précurseur</span>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-2">ADN Créatif</h4>
+                    <p class="text-gray-300">Concevoir, raisonner par analogie, fabriquer, innover. Je sais en toute occasion tirer parti de mon imagination et de mes expériences pour trouver des solutions originales et efficaces.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-2">Esprit d'Entreprise</h4>
+                    <p class="text-gray-300">Gérer les urgences, développer de nouvelles activités, matérialiser des projets. Je suis entreprenant et je n'hésite pas à m'engager lorsqu'une opportunité se présente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4 fade-in">Prêt à Saisir une Opportunité ?</h2>
+        <p class="text-lg text-gray-300 mb-8 fade-in" style="animation-delay: 0.1s;">Discutons de la manière dont nous pourrions collaborer.</p>
+        <div class="flex justify-center gap-4 fade-in" style="animation-delay: 0.2s;">
+            <a href="https://www.bertrand-bonnet.com/" class="bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-all">Retour au site principal</a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="py-8 px-4 bg-gray-900 text-gray-400 text-center border-t border-gray-700">
+    <p>© 2025 Bertrand Bonnet — Tous droits réservés.</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+</script>
+</body>
+</html>

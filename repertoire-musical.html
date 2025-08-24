@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Répertoire des Œuvres - Bertrand Bonnet (Blue Benito)</title>
+    <meta name="description" content="Explorez le répertoire complet des œuvres musicales de Bertrand Bonnet (Blue Benito), incluant les créations solo, les collaborations et les arrangements déposés à la Sacem.">
+    <link rel="canonical" href="https://www.bertrand-bonnet.com/repertoire.html" />
+
+    <!-- Scripts et Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg-repertoire {
+            background: linear-gradient(rgba(13, 13, 13, 0.9), rgba(13, 13, 13, 0.95)) no-repeat center center;
+            background-size: cover;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Style pour les onglets de navigation */
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        /* Animation pour les barres de stats */
+        .bar-fill {
+            transition: width 1.5s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+<!-- Hero Section -->
+<section class="hero-bg-repertoire px-4 py-20 md:py-24">
+    <div class="container mx-auto max-w-5xl text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 fade-in">Répertoire des Œuvres</h1>
+        <p class="text-xl md:text-2xl text-yellow-400 font-semibold mb-12 fade-in" style="animation-delay: 0.2s">Bertrand Bonnet (Blue Benito)</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto fade-in" style="animation-delay: 0.4s">
+            <div class="bg-gray-800 bg-opacity-50 p-6 rounded-xl">
+                <span class="block text-4xl font-bold text-yellow-400 stat-number" data-target="200">0</span>
+                <span class="block text-gray-300 mt-2">Œuvres</span>
+            </div>
+            <div class="bg-gray-800 bg-opacity-50 p-6 rounded-xl">
+                <span class="block text-4xl font-bold text-yellow-400 stat-number" data-target="25">0</span>
+                <span class="block text-gray-300 mt-2">Collaborateurs</span>
+            </div>
+            <div class="bg-gray-800 bg-opacity-50 p-6 rounded-xl">
+                <span class="block text-4xl font-bold text-yellow-400 stat-number" data-target="2">0</span>
+                <span class="block text-gray-300 mt-2">Identités</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Navigation et Contenu Principal -->
+<main class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+        <!-- Barre de navigation des onglets -->
+        <nav class="flex justify-center border-b border-gray-700 mb-12 fade-in">
+            <button class="tab-btn active text-lg font-semibold py-4 px-6 border-b-2 border-yellow-400 text-yellow-400" data-section="solo">Œuvres Solo</button>
+            <button class="tab-btn text-lg font-semibold py-4 px-6 border-b-2 border-transparent text-gray-400 hover:text-white hover:border-gray-500 transition" data-section="collaborations">Collaborations</button>
+            <button class="tab-btn text-lg font-semibold py-4 px-6 border-b-2 border-transparent text-gray-400 hover:text-white hover:border-gray-500 transition" data-section="arrangements">Arrangements</button>
+            <button class="tab-btn text-lg font-semibold py-4 px-6 border-b-2 border-transparent text-gray-400 hover:text-white hover:border-gray-500 transition" data-section="stats">Statistiques</button>
+        </nav>
+
+        <!-- Contenu des onglets -->
+        <div id="tab-content-container">
+            <!-- Section Œuvres Solo -->
+            <section id="solo" class="tab-content active">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold">Œuvres en Solo</h2>
+                    <p class="text-gray-400 mt-2">Créations où Bertrand Bonnet est crédité comme unique créateur.</p>
+                </div>
+                <div class="space-y-10">
+                    <div>
+                        <h3 class="text-xl font-bold text-yellow-400 mb-4">🎵 Compositeur</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">1H2ZIC</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">808 STATE</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">AERO</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">AMB</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">B DANCE</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">B GROOVE</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">B REGGAE</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">BEB DISCO</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">BOUNCE</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">COOL</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">COOLIO</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">DADADI</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">DEUX</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">DREAM M</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">DUNKERQUE</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FREE ATTITUDE</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FREE LANDER</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">GET UP</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">HOUSY</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">I LOVE YOU</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">J EN AI MARRE</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">JUMP</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">KOOALAX</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MSDISCO</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MYST</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">OPOMPO PART 1</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">OUCHTONIC</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">SLAP IN</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">SUNAIR</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">TEMPO</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ULTRA FUTUR</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">WORLD BENITO</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">YO</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-yellow-400 mb-4">🎤 Compositeur et Auteur/Parolier</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">BISOUS TIRE BOUCHON</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">BLUE HOUSE</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ELEPHANT</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FREQUENCE TEST</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">LOVE</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MEETING</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">NIMPORTEKOI</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">PAPA NOEL</div>
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">T ES ARTESIEN</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-yellow-400 mb-4">🎙️ Compositeur et Interprète</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                            <div class="bg-gray-800 p-3 rounded-md text-center text-sm">SEARCH</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Collaborations -->
+            <section id="collaborations" class="tab-content">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold">Œuvres en Collaboration</h2>
+                    <p class="text-gray-400 mt-2">Créations réalisées avec d'autres artistes.</p>
+                </div>
+                <div class="space-y-12">
+                    <!-- François Legleye -->
+                    <div>
+                        <h3 class="text-2xl font-bold border-l-4 border-yellow-400 pl-4 mb-6">Avec François LEGLEYE</h3>
+                        <div class="space-y-6">
+                            <h4 class="font-semibold text-lg text-gray-300">Compositeur (Bonnet & Legleye)</h4>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ARE FROGS ELECTRIC</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">A JUNGLE TRIP IN HEAVEN</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">BALEARIC BEATS</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">DEEP ZONE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ELECTRONIC SNAKE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ELEMENT OF NOISE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FLORAL ABSTRACT</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FLOWERS FOR GIRLS ONLY</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">GHOST OF ARCADIA</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">HYPNOTIC SOURCE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">IBIZA NATION</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">LOST IN FORBIDDEN ZONE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">LOVE PARADE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MESSAGE TO HUMANITY</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MYSTERIES OF BYZANTINE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">NIGHTS OF ARABIA</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">O LOCCO</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">OCTOGONAL FLARES</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ONDA DE LA LUNA</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ORCHESTRAL SPIRIT</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">PHANTOMS</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">POWERFULL FLOWERS</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">PULSE CODE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">PUPPETS</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">TAKE THE SUN AWAY</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">TEXAS</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">THE MADKOW</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">THE TOWER</div>
+                            </div>
+                            <h4 class="font-semibold text-lg text-gray-300 pt-4">Compositeur/Auteur (Bonnet & Legleye)</h4>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">A GREAT DAY</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">A LONDON HOUSE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ALLRIGHT</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">BALL OF CONFUSION</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">CAT'S EYES</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">DISCO DANCIN 2000</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">DIVA OF THE OPERA</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ENERGIZE ME</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">EROTIC POWER</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FUTURE SOUNDS</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">G POINT</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">GO EXITING</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">I CAN'T BELIEVE IN ONE MORE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">I HAVE MADE A X DREAM</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">LE PARADIS ETERNEL</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">LES Z ANIMO</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MAGNETIC MOVEMENT</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MENTAL STORM</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MOONSTORM PHASE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MYSTICAL NATION</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">NO COKE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">NO LOVE NO FUTURE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">PLAY THAT MUSIC</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">SPIRIT'S MUSIC</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">THE MIND THE SOUL</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">THE VOICE OF 2 FLYING STONES</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">TIBETAN BELL</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">TWILIGHT OF LANGDARRO</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">WHO ARE YOU</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">YEAH RIGHT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Autres collaborateurs -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
+                        <div>
+                            <h3 class="text-xl font-bold border-l-4 border-yellow-400 pl-4 mb-4">Avec ABDER</h3>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">BOUGER MA VIE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">DARKEST TRAIN</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">DON'T YOU WANT ME</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">EARTH IN PEACE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">GHOSTS OF BERLIN</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">LOVE STRONG</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">SEEDS OF HOPE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">THE DOORS OF HEAVEN</div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold border-l-4 border-yellow-400 pl-4 mb-4">Avec Michael DE SAN ANTONIO</h3>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">CALL ME</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">C EST LE CHANT DU COQ</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">CHECK</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">CHOCHO LAPIN</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FEELING</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FOR LOVE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FREE STYLE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">HEY</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MISS CAMPUS</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MOONA</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">PART OF ME</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">REACH UP</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">STORIA</div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold border-l-4 border-yellow-400 pl-4 mb-4">Avec P-Y LOMBARD & M. NACHTERGAELE</h3>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ATTITUDE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">AVEC KATSUNI</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">BASE OUT</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">BLACK WOOD</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">DEEP ZONE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ENGLISH LESSON</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">EVENTUALITY</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FISHER</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FOREST</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">GOLD FIRE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">GREAT DAY</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">GREEN WORK</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">LA PLANETE DES BONBONS</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">MILIEU</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">ORIENT EXPRESS</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">TIME OUT</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">VENDREDI</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">WEEK END</div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold border-l-4 border-yellow-400 pl-4 mb-4">Avec Esteban DE CASTANOBLE</h3>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">APOCALYPSE</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">FOREVER</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">LE BOUTON</div>
+                                <div class="bg-gray-800 p-3 rounded-md text-center text-sm">STOP CALLING U</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collaborations Diverses -->
+                    <div class="pt-8">
+                        <h3 class="text-2xl font-bold border-l-4 border-yellow-400 pl-4 mb-6">Collaborations Diverses</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">A LA BONNE FRANQUETTE</span><br><span class="text-xs text-gray-400">avec David Vallaeys, Johan Menneboo</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">ALLEZ DUNKERQUE</span><br><span class="text-xs text-gray-400">avec Fabrice Kulberg, Johan Menneboo</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">ALPHA TUNE</span><br><span class="text-xs text-gray-400">avec B. Van Garsse, M. Nachtergaele, S. Darras</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">ASSACEBON</span><br><span class="text-xs text-gray-400">avec Colfa Houmadi</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">BASSOMATIC</span><br><span class="text-xs text-gray-400">avec M. Tonino Roger, F. Legleye</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">BE FRESH</span><br><span class="text-xs text-gray-400">avec Buncheez</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">BIENVENUE SUR SCENE 2</span><br><span class="text-xs text-gray-400">avec P-Y Lombard, M. Nachtergaele, C. Renard</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">BLIND</span><br><span class="text-xs text-gray-400">avec Geneviève Fauquet</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">CHUNGA SONG</span><br><span class="text-xs text-gray-400">avec Colfa Houmadi</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">C POSSIBLE</span><br><span class="text-xs text-gray-400">avec De San Antonio M., D. Hennekein, P. Damanti</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">DON'T ASK WHO WE ARE</span><br><span class="text-xs text-gray-400">avec Geneviève Fauquet</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">EL CAMINO DEL AMOR</span><br><span class="text-xs text-gray-400">avec St Albertus, B. Escoffier, A. Boudaa</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">EL FRUTA PROHIBIDA</span><br><span class="text-xs text-gray-400">avec B. Escoffier, A. Boudaa, St Albertus</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">EVERYTHING IS FUN</span><br><span class="text-xs text-gray-400">avec David Vallaeys, De San Antonio M.</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">FEVER WHAT'S YOUR NAME</span><br><span class="text-xs text-gray-400">avec M. Guedri, D. Vallaeys, De San Antonio M.</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">GLORY WIND</span><br><span class="text-xs text-gray-400">avec Pierre Thouvenot, Buncheez</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">GROOVY SOUL</span><br><span class="text-xs text-gray-400">avec Pierre Thouvenot, Buncheez</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">HAPPY BREACK</span><br><span class="text-xs text-gray-400">avec S. Darras, B. Van Garsse, M. Nachtergaele</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">HOW REAL IS YOUR LOVE</span><br><span class="text-xs text-gray-400">avec David Vallaeys, De San Antonio M.</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">JE VIS MA VIE</span><br><span class="text-xs text-gray-400">avec Bruno Loy</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">KOALAX</span><br><span class="text-xs text-gray-400">avec P-Y Lombard, De San Antonio M., Paolo Damanti</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">L'ARRIVEE DE LA STAR</span><br><span class="text-xs text-gray-400">avec M. Nachtergaele, C. Renard, P-Y Lombard</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">LA DANCE DE LA RUMBA</span><br><span class="text-xs text-gray-400">avec F. Legleye, Maria Maldonado</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">LE PIAF</span><br><span class="text-xs text-gray-400">avec Malik Guedri</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">LE WEEK END DE ROBERT BITCH</span><br><span class="text-xs text-gray-400">avec J. Menneboo, F. Kulberg</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">LES AVENTURES DE ROBERT BITCH</span><br><span class="text-xs text-gray-400">avec M. Guedri, B. Dethoor, F. Kulberg</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">LIFE IS ONLY BEAUTY</span><br><span class="text-xs text-gray-400">avec Geneviève Fauquet</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">LOLIPOP</span><br><span class="text-xs text-gray-400">avec D. Hennekein, M. Nachtergaele, E. Bento</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">LOVE GAME</span><br><span class="text-xs text-gray-400">avec De San Antonio M., David Vallaeys</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">MAGIC</span><br><span class="text-xs text-gray-400">avec David Vallaeys, Michel Nachtergaele</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">MAMAYE</span><br><span class="text-xs text-gray-400">avec Colfa Houmadi</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">MANDEDEA</span><br><span class="text-xs text-gray-400">avec De San Antonio M., Y. A. Nsoga, P. Damanti</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">MEGA CRAQUANT</span><br><span class="text-xs text-gray-400">avec Johan Menneboo</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">MON DOUDOU MAGIQUE</span><br><span class="text-xs text-gray-400">avec P-Y Lombard, De San Antonio M.</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">MY STORY</span><br><span class="text-xs text-gray-400">avec B. Van Garsse, S. Darras, M. Nachtergaele, R. Mc Camery</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">NANATTITUDE</span><br><span class="text-xs text-gray-400">avec Bruno Loy</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">NOUS LES NANAS</span><br><span class="text-xs text-gray-400">avec Johan Menneboo, Abdarahmane Boudaa</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">ON THIS BEAT</span><br><span class="text-xs text-gray-400">avec Malik Guedri, Michel Nachtergaele</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">ONE STEP</span><br><span class="text-xs text-gray-400">avec Geneviève Fauquet, Brahimi Faouzi</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">OUR SWEET LULLABY</span><br><span class="text-xs text-gray-400">avec Pierre Thouvenot, Buncheez</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">P O M</span><br><span class="text-xs text-gray-400">avec David Vallaeys, De San Antonio M.</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">PATAPOOM</span><br><span class="text-xs text-gray-400">avec P-Y Lombard, M. Nachtergaele, C. Renard</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">POURQUOI PAS NOUS</span><br><span class="text-xs text-gray-400">avec Bruno Loy</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">RAGGAE FUNK</span><br><span class="text-xs text-gray-400">avec Bruno Loy</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">SEXY POUR</span><br><span class="text-xs text-gray-400">avec D. Pauwels, P. Damanti, M. Nachtergaele</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">SUN SUN</span><br><span class="text-xs text-gray-400">avec Fabrice Kulberg</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">SUNNY DAYS</span><br><span class="text-xs text-gray-400">avec Pierre Thouvenot, Buncheez</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">SWEET LULLABY</span><br><span class="text-xs text-gray-400">avec Buncheez</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">THAT KIX DOWN</span><br><span class="text-xs text-gray-400">avec David Vallaeys, Michel Nachtergaele</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">TOI</span><br><span class="text-xs text-gray-400">avec Bruno Loy</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">VIRTUAL PROCESS</span><br><span class="text-xs text-gray-400">avec B. Van Garsse, M. Nachtergaele, S. Darras</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">WAVES</span><br><span class="text-xs text-gray-400">avec B. Van Garsse, M. Nachtergaele, S. Darras</span></div>
+                            <div class="bg-gray-800 p-4 rounded-md"><span class="font-semibold">ZINE M GOMA</span><br><span class="text-xs text-gray-400">avec Colfa Houmadi</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Arrangements -->
+            <section id="arrangements" class="tab-content">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold">Arrangements</h2>
+                    <p class="text-gray-400 mt-2">Œuvres où Bertrand Bonnet intervient uniquement comme arrangeur.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                    <div class="bg-gray-800 p-4 rounded-md text-center"><span class="font-semibold">ALLEZ L USLD</span><br><span class="text-xs text-gray-400">pour Francesco Rapeso</span></div>
+                    <div class="bg-gray-800 p-4 rounded-md text-center"><span class="font-semibold">ALLEZ PARIS</span><br><span class="text-xs text-gray-400">pour Francesco Rapeso</span></div>
+                    <div class="bg-gray-800 p-4 rounded-md text-center"><span class="font-semibold">DANS MON PAYS D ESPAGNE</span><br><span class="text-xs text-gray-400">avec François Legleye</span></div>
+                    <div class="bg-gray-800 p-4 rounded-md text-center"><span class="font-semibold">LISTEN REMIX V CLUBBING</span><br><span class="text-xs text-gray-400">pour Francesco Rapeso</span></div>
+                </div>
+            </section>
+
+            <!-- Section Statistiques -->
+            <section id="stats" class="tab-content">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold">Statistiques du Répertoire</h2>
+                    <p class="text-gray-400 mt-2">Analyse quantitative de la production musicale.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <div class="bg-gray-800 p-6 rounded-xl text-center">
+                        <div class="text-4xl mb-3">🎵</div>
+                        <div class="text-3xl font-bold text-yellow-400">43</div>
+                        <div class="text-gray-300">Œuvres Solo</div>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl text-center">
+                        <div class="text-4xl mb-3">🤝</div>
+                        <div class="text-3xl font-bold text-yellow-400">150+</div>
+                        <div class="text-gray-300">Collaborations</div>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl text-center">
+                        <div class="text-4xl mb-3">🎭</div>
+                        <div class="text-3xl font-bold text-yellow-400">4</div>
+                        <div class="text-gray-300">Arrangements</div>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl text-center">
+                        <div class="text-4xl mb-3">👥</div>
+                        <div class="text-3xl font-bold text-yellow-400">25+</div>
+                        <div class="text-gray-300">Collaborateurs</div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl max-w-4xl mx-auto">
+                    <h3 class="text-xl font-bold text-center mb-6">Principales Collaborations</h3>
+                    <div class="space-y-4">
+                        <div class="chart-bar">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-semibold">François Legleye</span>
+                                <span class="text-sm text-gray-400">58 œuvres</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-4">
+                                <div class="bar-fill bg-yellow-400 h-4 rounded-full" data-percentage="35" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-semibold">P-Y Lombard & M. Nachtergaele</span>
+                                <span class="text-sm text-gray-400">18 œuvres</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-4">
+                                <div class="bar-fill bg-yellow-400 h-4 rounded-full" data-percentage="12" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-semibold">Michael De San Antonio</span>
+                                <span class="text-sm text-gray-400">13 œuvres</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-4">
+                                <div class="bar-fill bg-yellow-400 h-4 rounded-full" data-percentage="9" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-semibold">Abder (Abdarahmane Boudaa)</span>
+                                <span class="text-sm text-gray-400">8 œuvres</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-4">
+                                <div class="bar-fill bg-yellow-400 h-4 rounded-full" data-percentage="5" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-semibold">Esteban De Castanoble</span>
+                                <span class="text-sm text-gray-400">4 œuvres</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-4">
+                                <div class="bar-fill bg-yellow-400 h-4 rounded-full" data-percentage="3" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+
+<!-- Footer -->
+<footer class="py-8 px-4 bg-gray-800 text-gray-400 text-center mt-12">
+    <div class="mb-4">
+        <a href="index.html" class="mx-2 hover:text-yellow-400">Accueil</a> |
+        <a href="parcours.html" class="mx-2 hover:text-yellow-400">Mon Parcours</a>
+    </div>
+    <p>© 2025 Bertrand Bonnet — Répertoire Musical</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- Animation du compteur ---
+        const statNumbers = document.querySelectorAll('.stat-number');
+        const animationDuration = 2000; // 2 secondes
+
+        const animateCounter = (element) => {
+            const target = +element.getAttribute('data-target');
+            const increment = target / (animationDuration / 16);
+            let current = 0;
+
+            const updateCount = () => {
+                current += increment;
+                if (current < target) {
+                    element.innerText = Math.ceil(current);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    element.innerText = target;
+                }
+            };
+            updateCount();
+        };
+
+        // --- Observer pour déclencher l'animation au défilement ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('stat-number')) {
+                        animateCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                    if (entry.target.classList.contains('fade-in')) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+
+        statNumbers.forEach(el => observer.observe(el));
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // --- Logique des onglets ---
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        const statsTabButton = document.querySelector('.tab-btn[data-section="stats"]');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const sectionId = button.getAttribute('data-section');
+
+                // Gérer l'état actif des boutons
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active', 'text-yellow-400', 'border-yellow-400');
+                    btn.classList.add('text-gray-400', 'border-transparent');
+                });
+                button.classList.add('active', 'text-yellow-400', 'border-yellow-400');
+                button.classList.remove('text-gray-400', 'border-transparent');
+
+
+                // Afficher le contenu correspondant
+                tabContents.forEach(content => {
+                    if (content.id === sectionId) {
+                        content.classList.add('active');
+                    } else {
+                        content.classList.remove('active');
+                    }
+                });
+
+                // Animer les barres de stats si l'onglet stats est activé
+                if (sectionId === 'stats') {
+                    document.querySelectorAll('.bar-fill').forEach(bar => {
+                        const percentage = bar.getAttribute('data-percentage');
+                        bar.style.width = percentage + '%';
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

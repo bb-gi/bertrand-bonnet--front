@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bertrand Bonnet - Solution Maker | Créateur Digital & Expert IA</title>
+        <meta name="description" content="Je transforme vos idées en projets concrets. Création de site web, vidéo, marketing et intelligence artificielle.">
+    <link rel="canonical" href="https://www.bertrand-bonnet.com/" />
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="Bertrand Bonnet" /> <!-- website name -->
+    <meta property="og:site" content="https://www.bertrand-bonnet.com/" /> <!-- website link -->
+    <meta property="og:title" content="Bertrand Bonnet - Solution Maker | Créateur Digital & Expert IA"/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Je transforme vos idées en projets concrets. Création de site web, vidéo, marketing et intelligence artificielle." /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="https://www.bertrand-bonnet.com/images/bertrand-bonnet-se-vendre.jpg" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="https://www.bertrand-bonnet.com/" /> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bertrand Bonnet",
+      "url": "https://www.bertrand-bonnet.com",
+      "jobTitle": "Solution Maker | Créateur Digital & Expert IA",
+      "description": "Je transforme vos idées en projets concrets. Un seul interlocuteur pour tout : création de site web, vidéo, marketing et intelligence artificielle.",
+      "knowsAbout": ["Création de site web", "Réalisation vidéo", "Stratégie marketing", "Intelligence Artificielle", "Composition musicale"],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Maestris"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;a600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(13, 13, 13, 0.9), rgba(13, 13, 13, 0.95)) no-repeat center center;
+            background-size: cover;
+        }
+        .highlight {
+            position: relative;
+            display: inline-block;
+        }
+        .highlight:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30%;
+            background-color: rgba(255, 215, 0, 0.3);
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+        .highlight:hover:after {
+            height: 100%;
+            background-color: rgba(255, 215, 0, 0.5);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .process-step {
+            position: relative;
+        }
+        .process-step:not(:last-child):after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 24px;
+            height: calc(100% - 40px);
+            width: 2px;
+            background-color: #FFD700;
+        }
+        .btn-gold {
+            background-color: #FFD700;
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(255, 215, 0, 0.3);
+        }
+        .modal {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal-content {
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+<!-- Hero Section -->
+<section class="hero-bg min-h-screen flex items-center justify-center px-4 py-20">
+    <div class="container mx-auto max-w-6xl text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 fade-in">Bertrand Bonnet</h1>
+        <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-6 fade-in" style="animation-delay: 0.2s">Solution Maker | Créateur Digital & Expert IA</h2>
+
+        <div class="max-w-3xl mx-auto mb-10 fade-in" style="animation-delay: 0.4s">
+            <p class="text-xl md:text-2xl mb-6">
+                <span class="highlight">Je transforme vos idées en projets concrets</span>
+            </p>
+            <p class="text-lg md:text-xl opacity-90">
+                <strong class="text-yellow-400">Un seul interlocuteur pour tout :</strong><br> création de site web, vidéo, marketing et intelligence artificielle.
+            </p>
+        </div>
+
+        <button onclick="openModal()" class="btn-gold text-gray-900 font-bold py-4 px-8 rounded-full text-lg md:text-xl fade-in" style="animation-delay: 0.6s">
+            🚀 Discutons maintenant
+        </button>
+    </div>
+</section>
+
+<!-- Why Work With Me -->
+<section class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in">Pourquoi travailler avec moi ?</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 fade-in">
+                <div class="text-yellow-400 text-4xl mb-4">🧩</div>
+                <h3 class="text-xl font-bold mb-4">Tout-en-un</h3>
+                <p class="text-gray-300">Fini de courir après plusieurs prestataires. Une seule personne pour tous vos besoins digitaux.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 fade-in" style="animation-delay: 0.2s">
+                <div class="text-yellow-400 text-4xl mb-4">⏱️</div>
+                <h3 class="text-xl font-bold mb-4">Gain de temps</h3>
+                <p class="text-gray-300">De l'idée à la réalisation, tout est fluide et optimisé pour vous faire gagner du temps.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 fade-in" style="animation-delay: 0.4s">
+                <div class="text-yellow-400 text-4xl mb-4">📈</div>
+                <h3 class="text-xl font-bold mb-4">Plus de résultats</h3>
+                <p class="text-gray-300">Chaque action est pensée pour attirer, engager et convertir votre audience.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Expertise -->
+<section class="py-20 px-4 bg-gray-800">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in">Mes Expertises</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="flex items-start mb-6 fade-in">
+                <div class="text-yellow-400 text-2xl mr-4">🌐</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Création de sites web</h3>
+                    <p class="text-gray-300">Modernes et performants, conçus pour convertir vos visiteurs en clients.</p>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-6 fade-in" style="animation-delay: 0.1s">
+                <div class="text-yellow-400 text-2xl mr-4">🎥</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Vidéos</h3>
+                    <p class="text-gray-300">Qui captent l'attention et donnent envie d'agir immédiatement.</p>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-6 fade-in" style="animation-delay: 0.2s">
+                <div class="text-yellow-400 text-2xl mr-4">📢</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Stratégie marketing</h3>
+                    <p class="text-gray-300">Orientée résultats avec des KPI clairs et mesurables.</p>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-6 fade-in" style="animation-delay: 0.3s">
+                <div class="text-yellow-400 text-2xl mr-4">🤖</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">IA</h3>
+                    <p class="text-gray-300">Pour booster créativité et productivité dans vos projets.</p>
+                </div>
+            </div>
+
+            <div class="flex items-start mb-6 fade-in" style="animation-delay: 0.4s">
+                <div class="text-yellow-400 text-2xl mr-4">🎵</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Musique & audio</h3>
+                    <p class="text-gray-300">Pour donner une identité unique à vos projets.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center fade-in" style="animation-delay: 0.5s">
+            <blockquote class="text-xl italic border-l-4 border-yellow-400 pl-6 py-2">
+                <span class="text-yellow-400">🎯</span> Mon objectif : que votre projet devienne une réussite visible et mesurable.
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projets & Réalisations Notables -->
+<section class="py-20 px-4 bg-gray-800">
+    <div class="container mx-auto max-w-6xl">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Projets & Réalisations Notables</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Projet 1: Méthodologie pour Se Vendre -->
+            <div class="bg-gray-900 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 flex flex-col fade-in">
+                <div class="flex-grow">
+                    <div class="mb-4">
+                        <span class="inline-block bg-yellow-400 bg-opacity-10 text-yellow-400 text-sm font-semibold px-3 py-1 rounded-full">Marketing</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Méthodologie pour Se Vendre</h3>
+                    <p class="text-gray-300 mb-4">Conception d'un accompagnement personnalisé pour aider à décrocher les opportunités qui vous correspondent.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Stratégie</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Formation</span>
+                </div>
+
+                <div class="mt-6">
+                    <a href="https://www.se-vendre.com/" target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-400 text-gray-900 font-bold py-2 px-5 rounded-lg text-sm hover:bg-yellow-500 transition-all duration-300">
+                        🌐 Voir le site
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 2: VotreSitePro -->
+            <div class="bg-gray-900 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 flex flex-col fade-in" style="animation-delay: 0.1s;">
+                <div class="flex-grow">
+                    <div class="mb-4">
+                        <span class="inline-block bg-yellow-400 bg-opacity-10 text-yellow-400 text-sm font-semibold px-3 py-1 rounded-full">Développement</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        <a href="https://votresitepro.ovh/" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition-colors">VotreSitePro</a>
+                    </h3>
+                    <p class="text-gray-300 mb-4">Développement d'une solution clé en main pour la présence en ligne des professionnels.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Web</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">SaaS</span>
+                </div>
+                <div class="mt-6">
+                    <a href="https://www.votresitepro.ovh/" target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-400 text-gray-900 font-bold py-2 px-5 rounded-lg text-sm hover:bg-yellow-500 transition-all duration-300">
+                        🌐 Voir le site
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 3: Les Sorties -->
+            <div class="bg-gray-900 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 flex flex-col fade-in" style="animation-delay: 0.15s;">
+                <div class="flex-grow">
+                    <div class="mb-4">
+                        <span class="inline-block bg-yellow-400 bg-opacity-10 text-yellow-400 text-sm font-semibold px-3 py-1 rounded-full">Développement</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        <a href="https://www.lessorties.com/" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition-colors">LesSorties.com</a>
+                    </h3>
+                    <p class="text-gray-300 mb-4">La plateforme de référence pour découvrir et référencer des événements locaux.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Web</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Événementiel</span>
+                </div>
+                <div class="mt-6">
+                    <a href="https://www.lessorties.com/" target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-400 text-gray-900 font-bold py-2 px-5 rounded-lg text-sm hover:bg-yellow-500 transition-all duration-300">
+                        🌐 Voir le site
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 4: Blue Benito
+            <div class="bg-gray-900 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 flex flex-col fade-in" style="animation-delay: 0.2s;">
+                <div class="flex-grow">
+                    <div class="mb-4">
+                        <span class="inline-block bg-yellow-400 bg-opacity-10 text-yellow-400 text-sm font-semibold px-3 py-1 rounded-full">Audiovisuel</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Blue Benito</h3>
+                    <p class="text-gray-300 mb-4">Composition, enregistrement et réalisation complète du clip vidéo pour cet artiste.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Musique</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Vidéo</span>
+                </div>
+                <div class="mt-6">
+                    <a href="https://www.youtube.com/watch?v=67Wuy_KtzAc"  target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-400 text-gray-900 font-bold py-2 px-5 rounded-lg text-sm hover:bg-yellow-500 transition-all duration-300">
+                        🎬 Voir le clip
+                    </a>
+                </div>
+            </div>
+            -->
+
+            <!-- Projet 4: La Danse d'Hélène -->
+            <div class="bg-gray-900 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 flex flex-col fade-in" style="animation-delay: 0.3s;">
+                <div class="flex-grow">
+                    <div class="mb-4">
+                        <span class="inline-block bg-yellow-400 bg-opacity-10 text-yellow-400 text-sm font-semibold px-3 py-1 rounded-full">Production</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">La Dance d'Hélène</h3>
+                    <p class="text-gray-300 mb-4">Arrangements et enregistrement pour ce succès musical reconnu.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Composition</span>
+                    <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Production</span>
+                </div>
+                <div class="mt-6">
+                    <button onclick="openVideoModal('tzYzhyEI1dc')" class="inline-block bg-yellow-400 text-gray-900 font-bold py-2 px-5 rounded-lg text-sm hover:bg-yellow-500 transition-all duration-300">
+                        🎬 Voir  la vidéo
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Process -->
+<section class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in">Mon Process Simple et Efficace</h2>
+
+        <div class="max-w-3xl mx-auto space-y-8">
+            <!-- Step 1 -->
+            <div class="process-step pl-12 fade-in">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center text-gray-900 font-bold text-xl mr-4">1</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Découverte</h3>
+                        <p class="text-gray-300">On échange pour comprendre votre vision et vos objectifs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="process-step pl-12 fade-in" style="animation-delay: 0.2s">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center text-gray-900 font-bold text-xl mr-4">2</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Plan d'action clair</h3>
+                        <p class="text-gray-300">Vous savez exactement quoi, quand et comment on avance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-step pl-12 fade-in" style="animation-delay: 0.4s">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center text-gray-900 font-bold text-xl mr-4">3</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Réalisation rapide</h3>
+                        <p class="text-gray-300">Je m'occupe de tout, avec les bons outils et les bonnes méthodes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="process-step pl-12 fade-in" style="animation-delay: 0.6s">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center text-gray-900 font-bold text-xl mr-4">4</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Livraison + suivi</h3>
+                        <p class="text-gray-300">Vous repartez avec un projet prêt à performer, et je reste disponible pour optimiser.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Timeline -->
+<section class="py-20 px-4 bg-gray-800">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in">Mon Parcours</h2>
+
+        <div class="max-w-3xl mx-auto space-y-8">
+            <div class="flex items-start fade-in">
+                <div class="bg-yellow-400 rounded-full w-12 h-12 flex-shrink-0 flex items-center justify-center text-gray-900 font-bold text-xl mr-4">🎹</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-1">1987</h3>
+                    <p class="text-gray-300">Compositeur à 15 ans – premier succès musical</p>
+                </div>
+            </div>
+
+            <div class="flex items-start fade-in" style="animation-delay: 0.2s">
+                <div class="bg-yellow-400 rounded-full w-12 h-12 flex-shrink-0 flex items-center justify-center text-gray-900 font-bold text-xl mr-4">🌐</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-1">1999</h3>
+                    <p class="text-gray-300">Création d'un des premiers sites de jeux en ligne locaux</p>
+                </div>
+            </div>
+
+            <div class="flex items-start fade-in" style="animation-delay: 0.4s">
+                <div class="bg-yellow-400 rounded-full w-12 h-12 flex-shrink-0 flex items-center justify-center text-gray-900 font-bold text-xl mr-4">🎥</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-1">2011</h3>
+                    <p class="text-gray-300">Réalisation audiovisuelle et innovation technique</p>
+                </div>
+            </div>
+
+            <div class="flex items-start fade-in" style="animation-delay: 0.6s">
+                <div class="bg-yellow-400 rounded-full w-12 h-12 flex-shrink-0 flex items-center justify-center text-gray-900 font-bold text-xl mr-4">🎓</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-1">2020</h3>
+                    <p class="text-gray-300">Diplôme de Chef de Projet Marketing – stratégie + vente</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mon Parcours & Présentation -->
+<section class="py-20 px-4 bg-gray-900">
+    <div class="container mx-auto max-w-6xl">
+
+        <!-- Introduction avec Photo -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-center mb-20">
+            <!-- Colonne Photo -->
+            <div class="md:col-span-2 fade-in">
+                <img class="w-full h-auto rounded-2xl shadow-lg object-cover" src="https://www.bertrand-bonnet.com/images/bertrand-bonnet-se-vendre.jpg" alt="Portrait de Bertrand Bonnet">
+            </div>
+            <!-- Colonne Texte -->
+            <div class="md:col-span-3 fade-in" style="animation-delay: 0.1s;">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Un parcours polyvalent au service de l'innovation</h2>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Je suis Bertrand Bonnet, un profil hybride né en 1972. Mon parcours a débuté dans la musique avant de s'épanouir dans le développement web et le marketing digital. Aujourd'hui, je mets cette triple expertise au service de projets ambitieux.
+                </p>
+            </div>
+        </div>
+
+        <!-- Cartes des expertises -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Card 1: Artiste et Technicien -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center fade-in" style="animation-delay: 0.2s;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-yellow-400 mx-auto mb-4">
+                    <path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle>
+                </svg>
+                <h3 class="text-xl font-bold text-white mb-3">Artiste & Technicien du Son</h3>
+                <p class="text-gray-300">Dès 15 ans, je compose et arrange. Cette voie me mène à collaborer sur des succès musicaux et à maîtriser la production de A à Z.</p>
+            </div>
+
+            <!-- Card 2: Pionnier du Web -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center fade-in" style="animation-delay: 0.3s;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-yellow-400 mx-auto mb-4">
+                    <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <h3 class="text-xl font-bold text-white mb-3">Pionnier du Digital</h3>
+                <p class="text-gray-300">En 1999, je bascule dans le numérique. Je développe des solutions web innovantes pour connecter les gens et dynamiser le commerce local.</p>
+            </div>
+
+            <!-- Card 3: Créateur Audiovisuel -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center fade-in" style="animation-delay: 0.4s;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-yellow-400 mx-auto mb-4"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg>
+                <h3 class="text-xl font-bold text-white mb-3">Créateur Audiovisuel</h3>
+                <p class="text-gray-300">La vidéo devient une extension naturelle de ma créativité. Je réalise des clips et conçois des outils techniques comme un stabilisateur brushless en 2013.</p>
+            </div>
+        </div>
+
+        <!-- Synthèse -->
+        <div class="fade-in bg-gray-800 border-l-4 border-yellow-400 rounded-r-lg p-8 text-center" style="animation-delay: 0.5s;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-yellow-400 mx-auto mb-6"><path d="m3 11 18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg>
+            <h3 class="text-2xl font-bold text-white mb-4">La Synthèse : Le Marketing Digital</h3>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Pour unifier ces savoir-faire, j'ai obtenu un diplôme de Chef de projet marketing (2020). Cette certification ancre mes compétences techniques dans une vision stratégique, orientée résultats.
+            </p>
+        </div>
+    </div>
+    <div class="mt-8 text-center">
+        <a href="parcours.html" class="text-yellow-400 font-semibold hover:underline">
+            Découvrir mon parcours en détail &rarr;
+        </a>
+    </div>
+</section>
+
+
+<!-- Section Interview CTA -->
+<section class="py-20 px-4 bg-gray-800">
+    <div class="container mx-auto max-w-4xl">
+        <div class="bg-gray-900 rounded-2xl p-8 md:p-12 text-center fade-in border border-gray-700 hover:border-yellow-400 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400 mx-auto mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+            <h2 class="text-3xl font-bold text-white mb-4">Découvrez l'Interview</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Un échange authentique avec Fabrice Kulberg sur mon parcours, de la musique au digital, et ma vision de la création de solutions.
+            </p>
+            <a href="interviews.html" class="btn-gold text-gray-900 font-bold py-3 px-6 rounded-full text-lg">
+                Lire l'interview &rarr;
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-20 px-4 bg-gray-900">
+    <div class="container mx-auto max-w-6xl">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ce qu'ils disent de mon travail</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Témoignage 1: Marielle Duroule -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center flex flex-col items-center transition-all duration-300 fade-in">
+                <img src="images/testimonial-1.jpg" alt="Marielle Duroule" class="w-24 h-24 mx-auto rounded-full mb-6 border-4 border-gray-700 object-cover">
+                <p class="text-gray-300 mb-5 italic flex-grow">"Bertrand fait du travail de pro, de plus il est à l'écoute, il est patient, bref faut pas hésiter!"</p>
+                <div class="mt-auto">
+                    <h4 class="font-bold text-lg text-white">Marielle Duroule</h4>
+                    <p class="text-yellow-400">Artiste</p>
+                </div>
+            </div>
+
+            <!-- Témoignage 2: Dida Robbert -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center flex flex-col items-center transition-all duration-300 fade-in" style="animation-delay: 0.1s;">
+                <img src="images/testimonial-2.jpg" alt="Dida Robbert" class="w-24 h-24 mx-auto rounded-full mb-6 border-4 border-gray-700 object-cover">
+                <p class="text-gray-300 mb-5 italic flex-grow">"Mr.BB, is an excellent arranger specially in the domain of new sounds and Dance music productions!"</p>
+                <div class="mt-auto">
+                    <h4 class="font-bold text-lg text-white">Dida Robbert</h4>
+                    <p class="text-yellow-400">Musicien</p>
+                </div>
+            </div>
+
+            <!-- Témoignage 3: Pierre Thouvenot -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center flex flex-col items-center transition-all duration-300 fade-in" style="animation-delay: 0.2s;">
+                <img src="images/testimonial-3.jpg" alt="Pierre Thouvenot" class="w-24 h-24 mx-auto rounded-full mb-6 border-4 border-gray-700 object-cover">
+                <p class="text-gray-300 mb-5 italic flex-grow">"Bertrand est un créatif inventif, engagé et passionné. Il fera une excellente recrue pour l'établissement qui aura la chance de l'accueillir."</p>
+                <div class="mt-auto">
+                    <h4 class="font-bold text-lg text-white">Pierre Thouvenot</h4>
+                    <p class="text-yellow-400">Ingénieur du Son, Orion Productions</p>
+                </div>
+            </div>
+
+            <!-- Témoignage 4: Michel Nachtergaele -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center flex flex-col items-center transition-all duration-300 fade-in" style="animation-delay: 0.3s;">
+                <img src="images/testimonial-4.jpg" alt="Michel Nachtergaele" class="w-24 h-24 mx-auto rounded-full mb-6 border-4 border-gray-700 object-cover">
+                <p class="text-gray-300 mb-5 italic flex-grow">"Excellent et fidèle collaborateur. Rapide, précis et Open mind. Tout simplement du talent!"</p>
+                <div class="mt-auto">
+                    <h4 class="font-bold text-lg text-white">Michel Nachtergaele</h4>
+                    <p class="text-yellow-400">Managing Director (NowDiscs)</p>
+                </div>
+            </div>
+
+            <!-- NOUVEAUX TÉMOIGNAGES SANS IMAGE -->
+
+            <!-- Témoignage 5: Marc Delattre -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center flex flex-col items-center transition-all duration-300 fade-in" style="animation-delay: 0.4s;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-yellow-400 mx-auto mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+                <p class="text-gray-300 mb-5 italic flex-grow">"Bertrand est quelqu'un de précurseur. En 2004, il m'a créé un site web avec une application de prise de rendez-vous en ligne, ça ne se faisait pas encore. Il bouillonne d'idées et de solutions."</p>
+                <div class="mt-auto">
+                    <h4 class="font-bold text-lg text-white">Marc Delattre</h4>
+                    <p class="text-yellow-400">Entrepreneur</p>
+                </div>
+            </div>
+
+            <!-- Témoignage 6: Sylvain Vanstaevel -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center flex flex-col items-center transition-all duration-300 fade-in" style="animation-delay: 0.5s;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-yellow-400 mx-auto mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+                <p class="text-gray-300 mb-5 italic flex-grow">"C'est quelqu'un de créatif, d'intuitif, de patient et qui est à l'écoute. C'est pour ces raisons que j'ai toujours bien aimé travailler avec lui."</p>
+                <div class="mt-auto">
+                    <h4 class="font-bold text-lg text-white">Sylvain Vanstaevel</h4>
+                    <p class="text-yellow-400">Comédien et Producteur</p>
+                </div>
+            </div>
+
+            <!-- Témoignage 7: Dylan Nédoncelle -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center flex flex-col items-center transition-all duration-300 fade-in" style="animation-delay: 0.6s;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-yellow-400 mx-auto mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+                <p class="text-gray-300 mb-5 italic flex-grow">"C'est un esprit créatif sur pattes. Il est aussi présent pour les autres quand on lui demande de l'aide, ou sinon il sait aussi se mettre en avant pour proposer son aide."</p>
+                <div class="mt-auto">
+                    <h4 class="font-bold text-lg text-white">Dylan Nédoncelle</h4>
+                    <p class="text-yellow-400">Responsable Logistique</p>
+                </div>
+            </div>
+
+            <!-- Témoignage 8: Gilles Declemy -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center flex flex-col items-center transition-all duration-300 fade-in" style="animation-delay: 0.7s;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-yellow-400 mx-auto mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+                <p class="text-gray-300 mb-5 italic flex-grow">"Il a toujours eu des idées simples mais efficaces pour faire avancer les choses. Ça s'est toujours très bien passé et de façon très efficace. Je ne peux que recommander sa collaboration."</p>
+                <div class="mt-auto">
+                    <h4 class="font-bold text-lg text-white">Gilles Declemy</h4>
+                    <p class="text-yellow-400">Declemy Conseil</p>
+                </div>
+            </div>
+
+            <!-- Témoignage 9: Xavier Hien -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center flex flex-col items-center transition-all duration-300 fade-in" style="animation-delay: 0.8s;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-yellow-400 mx-auto mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+                <p class="text-gray-300 mb-5 italic flex-grow">"Il sait se mettre au service du client et l'accompagner dans son projet. Il est force de proposition."</p>
+                <div class="mt-auto">
+                    <h4 class="font-bold text-lg text-white">Xavier Hien</h4>
+                    <p class="text-yellow-400">Directeur Commercial - Chimie</p>
+                </div>
+            </div>
+
+            <!-- Témoignage 10: Jean-Philippe Szusza -->
+            <div class="bg-gray-800 p-8 rounded-xl text-center flex flex-col items-center transition-all duration-300 fade-in" style="animation-delay: 0.9s;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-yellow-400 mx-auto mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 2.5.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+                <p class="text-gray-300 mb-5 italic flex-grow">"Il est ouvert d'esprit, agréable et très serviable. Il sait adapter ses conseils techniques en langage compréhensible. Pour moi, c'est la bonne personne."</p>
+                <div class="mt-auto">
+                    <h4 class="font-bold text-lg text-white">Jean-Philippe Szusza</h4>
+                    <p class="text-yellow-400">Chef de projet</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Lien vers la vidéo des témoignages -->
+        <div class="mt-16 text-center fade-in" style="animation-delay: 1s;">
+            <button onclick="openVideoModal('3aZjTVDOZJo')" class="inline-block bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-lg text-lg hover:bg-yellow-500 transition-all duration-300">
+                🎬 Voir plus de témoignages en vidéo
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Engagements & Bénéfices Clients -->
+<section class="py-20 px-4 bg-gray-900">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in">Mes Engagements pour Votre Réussite</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Engagement 1: Confiance & Fiabilité -->
+            <div class="bg-gray-800 p-8 rounded-xl fade-in">
+                <div class="text-yellow-400 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">Un Partenaire de Confiance</h3>
+                <p class="text-gray-300">Les témoignages et la longévité de ma carrière sont le gage de mon engagement. Je m'investis dans votre projet comme un véritable collaborateur pour garantir des résultats fiables.</p>
+            </div>
+
+            <!-- Engagement 2: Expérience & Vision Globale -->
+            <div class="bg-gray-800 p-8 rounded-xl fade-in" style="animation-delay: 0.2s">
+                <div class="text-yellow-400 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">Une Expertise à 360°</h3>
+                <p class="text-gray-300">Avec plus de 30 ans d'expérience en musique, 25 ans dans le web et une certification en marketing, j'apporte une vision globale qui connecte la technique, la créativité et vos objectifs.</p>
+            </div>
+
+            <!-- Engagement 3: Sur-mesure & Résultats -->
+            <div class="bg-gray-800 p-8 rounded-xl fade-in" style="animation-delay: 0.4s">
+                <div class="text-yellow-400 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">Des Solutions Orientées Résultats</h3>
+                <p class="text-gray-300">Mon parcours atypique me permet de créer des solutions sur mesure. Chaque projet est pensé pour être non seulement esthétique mais surtout efficace et performant.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section id="contact" class="py-20 px-4 bg-yellow-400 text-gray-900">
+    <div class="container mx-auto max-w-6xl text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 fade-in">Prêt à lancer votre projet ?</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto fade-in" style="animation-delay: 0.2s">
+            <strong>C'est simple</strong> : vous avez une idée, je m'occupe de la transformer en réalité.
+        </p>
+
+        <button onclick="openModal()" class="bg-gray-900 text-yellow-400 font-bold py-4 px-8 rounded-full text-lg md:text-xl hover:bg-gray-800 transition-all duration-300 fade-in" style="animation-delay: 0.4s">
+            📩 Contactez-moi dès maintenant
+        </button>
+    </div>
+</section>
+
+<!-- Footer -->
+    <footer class="py-8 px-4 bg-gray-900 text-gray-400 text-center">
+        <div class="mb-4">
+            <a href="mentions-legales.html" class="mx-2 hover:text-yellow-400">Mentions Légales</a> |
+            <a href="politique-de-confidentialite.html" class="mx-2 hover:text-yellow-400">Politique de Confidentialité</a> |
+            <a href="#contact" onclick="openModal()" class="mx-2 hover:text-yellow-400">Contact</a>
+        </div>
+        <p>© 2025 Bertrand Bonnet — <em>Conçu pour transformer vos idées en réalité</em></p>
+    </footer>
+
+<!-- Modal -->
+<div id="modal" class="modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 opacity-0 invisible px-4 py-8">
+    <div class="modal-content bg-gray-800 rounded-xl max-w-md w-full p-8 relative">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <h3 class="text-2xl font-bold mb-6">Contactez-moi</h3>
+
+        <form id="contactForm" class="space-y-4">
+            <div>
+                <label for="name" class="block text-sm font-medium mb-1">Nom</label>
+                <input type="text" id="name" name="name" required class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+            </div>
+
+            <div>
+                <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                <input type="email" id="email" name="email" required class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+            </div>
+
+            <div>
+                <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                <textarea id="message" name="message" rows="4" required class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+            </div>
+
+            <button type="submit" class="btn-gold text-gray-900 font-bold py-3 px-6 rounded-lg w-full mt-4">
+                Envoyer le message
+            </button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Scroll animation
+    document.addEventListener('DOMContentLoaded', function() {
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const contactModal = document.getElementById('modal');
+                const videoModal = document.getElementById('videoModal');
+
+                if (contactModal.classList.contains('active')) {
+                    closeModal();
+                }
+                if (videoModal.classList.contains('active')) {
+                    closeVideoModal();
+                }
+            }
+        });
+
+        const videoModal = document.getElementById('videoModal');
+        if (videoModal) {
+            videoModal.addEventListener('click', function(event) {
+                if (event.target === videoModal) {
+                    closeVideoModal();
+                }
+            });
+        }
+
+        const contactForm = document.getElementById('contactForm');
+        if(contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const form = event.target;
+                const formData = new FormData(form);
+                const submitButton = form.querySelector('button[type="submit"]');
+                const originalButtonText = submitButton.innerHTML;
+
+                submitButton.disabled = true;
+                submitButton.innerHTML = 'Envoi en cours...';
+
+                fetch('send_message.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(err => { throw new Error(err.message) });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.status === 'success') {
+                        form.reset();
+                        submitButton.innerHTML = 'Message envoyé !';
+                        setTimeout(() => {
+                            closeModal();
+                            submitButton.innerHTML = originalButtonText;
+                            submitButton.disabled = false;
+                        }, 3000);
+                    } else {
+                        alert('Erreur: ' + (data.message || 'Une erreur est survenue.'));
+                        submitButton.innerHTML = originalButtonText;
+                        submitButton.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Une erreur est survenue: ' + error.message);
+                    submitButton.innerHTML = originalButtonText;
+                    submitButton.disabled = false;
+                });
+            });
+        }
+    });
+
+    // Modal functions
+    function openModal() {
+        const modal = document.getElementById('modal');
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('modal');
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    function openVideoModal(videoId) {
+        const modal = document.getElementById('videoModal');
+        const player = document.getElementById('youtubePlayer');
+        const modalContent = modal.querySelector('.modal-content');
+
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        // Calculate the best size for the video, with a 20% margin
+        const maxWidth = viewportWidth * 0.8;
+        const maxHeight = viewportHeight * 0.8;
+
+        let videoWidth = maxWidth;
+        let videoHeight = videoWidth * (9 / 16);
+
+        if (videoHeight > maxHeight) {
+            videoHeight = maxHeight;
+            videoWidth = videoHeight * (16 / 9);
+        }
+
+        modalContent.style.width = videoWidth + 'px';
+        modalContent.style.height = videoHeight + 'px';
+        
+        player.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0&loop=1';
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoModal() {
+        const modal = document.getElementById('videoModal');
+        const player = document.getElementById('youtubePlayer');
+        const modalContent = modal.querySelector('.modal-content');
+
+        player.src = ''; // Stop the video
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+
+        // Reset styles
+        modalContent.style.width = '';
+        modalContent.style.height = '';
+    }
+</script>
+<!-- Video Modal -->
+<div id="videoModal" class="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 opacity-0 invisible px-4 py-8">
+    <div class="modal-content bg-black rounded-lg max-w-4xl w-full relative" style="padding-top: 56.25%;">
+        <button onclick="closeVideoModal()" class="absolute top-2 right-2 text-gray-900 bg-yellow-400 rounded-full h-10 w-10 flex items-center justify-center z-10 text-3xl font-bold leading-none hover:bg-yellow-500 transition-colors">&times;</button>
+        <iframe id="youtubePlayer" class="absolute top-0 left-0 w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+</body>
+</html>
