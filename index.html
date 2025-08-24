@@ -54,7 +54,7 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;a600;700;800&display=swap" rel="stylesheet">
@@ -872,7 +872,7 @@
 
         modalContent.style.width = videoWidth + 'px';
         modalContent.style.height = videoHeight + 'px';
-        
+
         player.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0&loop=1';
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
